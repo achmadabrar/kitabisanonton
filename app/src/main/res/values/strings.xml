@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">kitabisanonton</string>
+    <string name="favorite">favorite</string>
+    <string name="category">Category</string>
+    <string name="popular">Popular</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="ya">Ya</string>
+    <string name="tidak">Tidak</string>
+    <string name="favorite_kosong">Favorite Kosong</string>
+</resources>

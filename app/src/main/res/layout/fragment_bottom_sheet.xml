@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.BottomSheetFragment">
+
+    <RadioGroup
+        android:id="@+id/rgSortBy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_button_popular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:layoutDirection="rtl"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp"
+            android:text="@string/popular"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EDEDED"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+
+        <RadioButton
+            android:id="@+id/radio_button_top_rated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:layoutDirection="rtl"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp"
+            android:text="@string/top_rated"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EDEDED"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_now_playing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:layoutDirection="rtl"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp"
+            android:text="@string/now_playing"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+</FrameLayout>

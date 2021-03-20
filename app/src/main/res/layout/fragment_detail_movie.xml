@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_poster_movie"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_margin="10dp"
+                android:padding="8dp"
+                tools:background="#03A9F4"
+                android:layout_width="120dp"
+                android:layout_height="200dp" />
+
+            <ImageView
+                android:id="@+id/image_icon_fav"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/text_title_movie"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_margin="10dp"
+                android:padding="8dp"
+                android:background="@drawable/ic_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/text_title_movie"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/text_release_date"
+                app:layout_constraintStart_toEndOf="@id/image_poster_movie"
+                app:layout_constraintEnd_toStartOf="@id/image_icon_fav"
+                android:layout_margin="10dp"
+                tools:text="Sweeney Todd: The Demon Barber Of Fleet Street"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/text_release_date"
+                app:layout_constraintTop_toBottomOf="@id/text_title_movie"
+                app:layout_constraintStart_toEndOf="@id/image_poster_movie"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_margin="10dp"
+                tools:text="Release Data"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/text_overview_title"
+                app:layout_constraintTop_toBottomOf="@id/text_release_date"
+                app:layout_constraintStart_toEndOf="@id/image_poster_movie"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_margin="10dp"
+                android:text="Overview"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/text_desc_movie"
+                app:layout_constraintTop_toBottomOf="@id/text_overview_title"
+                app:layout_constraintStart_toEndOf="@id/image_poster_movie"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_margin="10dp"
+                android:ellipsize="end"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_review_movie"
+        app:layout_constraintTop_toBottomOf="@id/card_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
